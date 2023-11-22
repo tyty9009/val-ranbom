@@ -1,7 +1,7 @@
 {
-"companyName": "DefaultCompany",
+"companyName": "Tty9009",
 "productName": "valorent randomizer",
-"productVersion": "0.1",
+"productVersion": "v1",
 "dataUrl": "game.data.unityweb",
 "wasmCodeUrl": "game.wasm.code.unityweb",
 "wasmFrameworkUrl": "game.wasm.framework.unityweb",
