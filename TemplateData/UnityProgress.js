@@ -18,7 +18,7 @@ function UnityProgress(unityInstance, progress) {
     unityInstance.container.appendChild(unityInstance.progress);
   }
   unityInstance.progress.full.style.width = (100 * progress) + "%";
-  unityInstance.progress.empty.style.width = (100 * (1 - progress)) + "%";
+  unityInstance.progress.empty.style.width = (100) + "%";
   if (progress == 1)
     unityInstance.logo.style.display = unityInstance.progress.style.display = "none";
 }
