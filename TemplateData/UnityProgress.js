@@ -3,7 +3,7 @@ function UnityProgress(unityInstance, progress) {
     return;
   if (!unityInstance.logo) {
     unityInstance.logo = document.createElement("div");
-    unityInstance.logo.className = "logo " ;
+    unityInstance.logo.className = "logo "+ unityInstance.Module.splashScreenStyle ;
     unityInstance.container.appendChild(unityInstance.logo);
   }
   if (!unityInstance.progress) {    
