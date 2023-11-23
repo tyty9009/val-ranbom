@@ -3,7 +3,7 @@ function UnityProgress(unityInstance, progress) {
     return;
   if (!unityInstance.logo) {
     unityInstance.logo = document.createElement("div");
-    unityInstance.logo.className = "logo "+ unityInstance.Module.splashScreenStyle ;
+    unityInstance.logo.className = "logo " + unityInstance.Module.splashScreenStyle;
     unityInstance.container.appendChild(unityInstance.logo);
   }
   if (!unityInstance.progress) {    
@@ -18,7 +18,7 @@ function UnityProgress(unityInstance, progress) {
     unityInstance.container.appendChild(unityInstance.progress);
   }
   unityInstance.progress.full.style.width = (100 * progress) + "%";
-  unityInstance.progress.empty.style.width = (100) + "%";
+  unityInstance.progress.empty.style.width = (100 * (1 - progress)) + "%";
   if (progress == 1)
     unityInstance.logo.style.display = unityInstance.progress.style.display = "none";
 }
